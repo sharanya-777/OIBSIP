@@ -1,0 +1,23 @@
+# OIBSIP Task 3 - Temperature Converter
+
+Project Name: Temperature Converter
+
+This project is a web-based temperature conversion tool developed as part of the Oasis Infobyte Internship Program. It enables users to convert temperature values between Celsius, Fahrenheit, and Kelvin through a simple and interactive interface.
+
+Features:
+
+* Convert Celsius to Fahrenheit and Kelvin
+* Convert Fahrenheit to Celsius and Kelvin
+* Convert Kelvin to Celsius and Fahrenheit
+* Input validation for numeric values
+* Clean and responsive user interface
+* Beginner-friendly implementation
+
+Technologies Used:
+
+* HTML
+* CSS
+* JavaScript
+
+Created by:
+Jallella Sharanya 
