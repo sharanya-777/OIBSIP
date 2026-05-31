@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Ultimate Student Productivity Platform</title>
+    <!-- Simple, readable Google Font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SECTION 1: Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <!-- Brand Logo -->
+            <a href="#" class="nav-logo">
+                <!-- Simple SVG Book Icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                <span>StudyHub</span>
+            </a>
+
+            <!-- Mobile Navigation Toggle Button -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#timer-tool">Try Timer</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-btn">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECTION 2: Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Left Side: Headline and CTA -->
+            <div class="hero-content">
+                <h1>Organize your college life, without the stress.</h1>
+                <p>StudyHub brings tasks, notes, and study timers into one simple, clean space. Built by students, for students, to help you stay focused and ace your exams.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Start Organizing Free</a>
+                    <a href="#features" class="btn btn-secondary">See How it Works</a>
+                </div>
+            </div>
+            <!-- Right Side: Platform Mockup/Illustration -->
+            <div class="hero-image-wrapper">
+                <img src="hero.png" alt="StudyHub Dashboard Illustration" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Features Section -->
+    <section id="features" class="features">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Everything you need to succeed</h2>
+                <p>Simple tools designed to solve real classroom challenges. No complicated setups, just pure productivity.</p>
+            </div>
+
+            <!-- Features Grid (3 Cards) -->
+            <div class="features-grid">
+                <!-- Card 1: Task Tracker -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <!-- Check Square Icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                    </div>
+                    <h3>Smart Task Tracker</h3>
+                    <p>Keep track of syllabus assignments, exams, and project milestones. Group them by course and set custom reminders so you never miss a deadline.</p>
+                </div>
+
+                <!-- Card 2: Study Timer -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <!-- Clock Icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h3>Pomodoro Timer</h3>
+                    <p>Use interval-based studying to stay locked in. Set study blocks, schedule short breaks, and monitor how many hours you dedicate to each subject.</p>
+                </div>
+
+                <!-- Card 3: Class Hubs -->
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <!-- Users Icon -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>Peer Collaboration</h3>
+                    <p>Create shared checklists and project timelines with study groups or project partners. Keep everyone aligned and divide tasks effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Interactive Showcase Widget (Pomodoro Timer) -->
+    <section id="timer-tool" class="timer-section">
+        <div class="section-container">
+            <div class="timer-layout">
+                <!-- Info text on the side -->
+                <div class="timer-info">
+                    <span class="badge">Live Demo</span>
+                    <h2>Build healthy study habits, starting right now.</h2>
+                    <p>Don't wait to download the app to start studying. Give our core Pomodoro tool a spin directly from this page. Set your timer, start focusing, and see how much you can get done in 25 minutes.</p>
+                </div>
+
+                <!-- Actual Timer Interactive Card -->
+                <div class="timer-card">
+                    <!-- Mode toggles -->
+                    <div class="timer-modes">
+                        <button class="timer-mode-btn active" data-time="1500" id="modeFocus">Study (25m)</button>
+                        <button class="timer-mode-btn" data-time="300" id="modeShort">Short Break (5m)</button>
+                        <button class="timer-mode-btn" data-time="900" id="modeLong">Long Break (15m)</button>
+                    </div>
+                    
+                    <!-- Timer Countdown display -->
+                    <div class="timer-display" id="timerDisplay">25:00</div>
+                    
+                    <!-- Timer controls -->
+                    <div class="timer-controls">
+                        <button class="btn btn-primary btn-lg" id="timerStart">Start</button>
+                        <button class="btn btn-secondary btn-lg" id="timerReset">Reset</button>
+                    </div>
+
+                    <p class="timer-status" id="timerStatus">Click start to begin focusing!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Student Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Tested by real students</h2>
+                <p>Here is what students on our campus are saying about using StudyHub for their courses.</p>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"Before StudyHub, my task tracking was scattered between three notebooks and random phone notes. Having assignments and a study timer in one place changed the game for exam week."</p>
+                    <div class="student-profile">
+                        <div class="student-avatar blue-avatar">ST</div>
+                        <div>
+                            <h4 class="student-name">Sarah T.</h4>
+                            <p class="student-meta">Sophomore, Biology Major</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"The group task boards made coordinating our computer science capstone project incredibly straightforward. No more text chains asking 'who is doing what'."</p>
+                    <div class="student-profile">
+                        <div class="student-avatar green-avatar">JM</div>
+                        <div>
+                            <h4 class="student-name">Jason M.</h4>
+                            <p class="student-meta">Senior, Computer Science Major</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"I love the Pomodoro timer logs. Being able to see that I studied 4 hours for chemistry gives me a huge confidence boost going into exams."</p>
+                    <div class="student-profile">
+                        <div class="student-avatar purple-avatar">EL</div>
+                        <div>
+                            <h4 class="student-name">Elena L.</h4>
+                            <p class="student-meta">Freshman, Pre-Med</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: Footer and Newsletter Signup -->
+    <footer id="contact" class="footer">
+        <div class="section-container">
+            <div class="footer-top">
+                <!-- Footer branding and description -->
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        <span>StudyHub</span>
+                    </a>
+                    <p class="brand-desc">A simple, student-built productivity hub designed to keep college tasks and schedules organized. Clean, direct, and distraction-free.</p>
+                </div>
+
+                <!-- Quick links -->
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#timer-tool">Focus Timer</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact details -->
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>Built as a CS Student Project</p>
+                    <p>Email: <a href="mailto:support@studyhub-student.edu">support@studyhub-student.edu</a></p>
+                    <p>Office: Engineering Bldg Room 402</p>
+                </div>
+
+                <!-- Newsletter Signup Form -->
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe for study tips and product updates built for college students.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your student email" id="newsletterEmail" required>
+                        <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                    </form>
+                    <p class="form-feedback text-success d-none" id="newsletterFeedback">✓ Thanks! We will keep you updated.</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom details -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 StudyHub Student Project. All rights reserved. Created with HTML, CSS, and JS for Web Dev 101.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript logic file -->
+    <script src="app.js"></script>
+</body>
+</html>
